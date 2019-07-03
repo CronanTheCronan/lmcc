@@ -1,0 +1,24 @@
+.modal-dialog {
+    text-shadow: none;
+}
+
+.modal-header {
+    color: #fff;
+    background-color: #880e4f;
+}
+
+.modal button {
+    color: white;
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
+@media only screen and (max-width: 992px) {
+    iframe {
+        width: 300px;
+        height: 225px;
+    }
+}

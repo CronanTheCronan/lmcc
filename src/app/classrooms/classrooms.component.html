@@ -1,12 +1,19 @@
-<div class="classroomCardContainer" *ngFor="let classroom of classroomList">
-  <mdb-card class="mt-2">
-    <mdb-card-img style="width: 200px" src="{{classroom.photo}}" alt="card image cap"></mdb-card-img>
-    <mdb-card-body>
-      <mdb-card-title>
-        <h4>{{classroom.name}}</h4>
-      </mdb-card-title>
-      <mdb-card-text>
-        Age Group: {{classroom.ageGroup}} - {{classroom.ages}}
-      </mdb-card-text>
-    </mdb-card-body>
-  </mdb-card>
+<div class="classroomCardContainer row">
+  <div class="col" *ngFor="let classroom of classroomList">
+    <mdb-card class="mdbCard">
+      <!-- <mdb-card-img style="width: 200px" src="{{classroom.photo}}" alt="card image cap"></mdb-card-img> -->
+      <mdb-card-body>
+        <mdb-card-title>
+          <h4>{{ classroom.name }}</h4>
+        </mdb-card-title>
+        <mdb-card-text>
+          Age Group: <br />
+          {{ classroom.ageGroup }} - {{ classroom.ages }}
+        </mdb-card-text>
+        <button type="button" class="btn btn-unique waves-light" mdbWavesEffect>
+          Learn More
+        </button>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</div>
