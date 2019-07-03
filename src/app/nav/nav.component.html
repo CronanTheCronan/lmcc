@@ -1,0 +1,36 @@
+<header>
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark pink darken-4">
+        <mdb-navbar-brand>
+            <a class="navbar-brand" routerLink="/home">
+                <i class="fas fa-child mr-2"></i>
+                <strong>LMCC</strong>
+            </a>
+        </mdb-navbar-brand>
+        <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbWavesEffect>
+                <a routerLink="/home" class="nav-link">Home
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+              <li class="nav-item waves-light" mdbWavesEffect>
+                <a routerLink="/about" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item waves-light" mdbWavesEffect>
+                <a routerLink="/classrooms" class="nav-link">Classrooms</a>
+              </li>
+              <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Curriculum</a>
+              </li>
+              <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Prices</a>
+              </li>
+              <li class="nav-item waves-light" mdbWavesEffect>
+                <a (click)="goToLink('https://www.oncareoffice.com/parentportal/parentlogin.aspx?ID=3C008A21-21B8-4E3A-ACB5-0C8575016C48')" class="nav-link">Parent Portal</a>
+              </li>
+        </ul>
+      </links>
+    </mdb-navbar>
+  
+  </header>
+

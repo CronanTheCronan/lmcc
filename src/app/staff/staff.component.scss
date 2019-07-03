@@ -1,0 +1,32 @@
+.container {
+    margin-top: 20px;
+}
+
+.card-outer-container {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    padding: 5px 20px;
+}
+
+.card-row {
+    display: flex;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .img-thumbnail {
+        display: none;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+}

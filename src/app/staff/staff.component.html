@@ -1,0 +1,236 @@
+<div class="container">
+<h2>About Us</h2>
+<div class="card-outer-container">
+  <div class="card-row">
+    <div class="card-container col-lg-6">
+      <!-- Card -->
+      <mdb-card>
+        <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+          <!-- Card img -->
+          <mdb-card-img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1562123615-3f4882dba648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt="Card image cap"
+          ></mdb-card-img>
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <h5 class="pink-text">Jessica Baydoun</h5>
+          <!--Title-->
+          <h4 class="card-title">Owner</h4>
+          <!--Text-->
+
+          <button
+            type="button"
+            class="btn btn-unique waves-light"
+            mdbWavesEffect
+            (click)="ownerModal.show()"
+          >
+            Learn More
+          </button>
+        </mdb-card-body>
+        <!--/.Card content-->
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+
+    <div class="card-container  col-lg-6">
+      <!--Card-->
+      <mdb-card cascade="true" class="text-center">
+        <!--Card image-->
+        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+          <mdb-card-img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1562123615-3f4882dba648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+          ></mdb-card-img>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <h5 class="pink-text">Brittany Barrett</h5>
+          <!--Title-->
+          <h4 class="card-title">Director</h4>
+          <!--Text-->
+
+          <button
+            type="button"
+            class="btn btn-unique waves-light"
+            mdbWavesEffect
+            (click)="directorModal.show()"
+          >
+            Learn More
+          </button>
+        </mdb-card-body>
+        <!--/.Card content-->
+      </mdb-card>
+      <!--/.Card-->
+    </div>
+  </div>
+    <div class="card-row">
+      <div class="card-container col-lg-6">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              class="img-thumbnail"
+              src="https://images.unsplash.com/photo-1562123615-3f4882dba648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Card content-->
+            <h5 class="pink-text">Lindsey Maynard</h5>
+            <!--Title-->
+            <h4 class="card-title">Assistant Director</h4>
+            <!--Text-->
+
+            <button
+              type="button"
+              class="btn btn-unique waves-light"
+              mdbWavesEffect
+              (click)="directorModal.show()"
+            >
+              Learn More
+            </button>
+          </mdb-card-body>
+          <!--/.Card content-->
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+
+      <div class="card-container col-lg-6">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img
+              class="img-thumbnail"
+              src="https://images.unsplash.com/photo-1562123615-3f4882dba648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            ></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Card content-->
+            <h5 class="pink-text">Allessandra Ford</h5>
+            <!--Title-->
+            <h4 class="card-title">Administrative Assistant</h4>
+            <!--Text-->
+
+            <button
+              type="button"
+              class="btn btn-unique waves-light"
+              mdbWavesEffect
+              (click)="directorModal.show()"
+            >
+              Learn More
+            </button>
+          </mdb-card-body>
+          <!--/.Card content-->
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+    </div>
+  </div>
+
+
+<div
+  mdbModal
+  #ownerModal="mdbModal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myBasicModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="ownerModal.hide()"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          mdbBtn
+          color="secondary"
+          class="waves-light"
+          aria-label="Close"
+          (click)="ownerModal.hide()"
+          mdbWavesEffect
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  mdbModal
+  #directorModal="mdbModal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myBasicModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="directorModal.hide()"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          mdbBtn
+          color="secondary"
+          class="waves-light"
+          aria-label="Close"
+          (click)="directorModal.hide()"
+          mdbWavesEffect
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
