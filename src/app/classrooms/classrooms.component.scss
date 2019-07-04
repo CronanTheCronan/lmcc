@@ -1,4 +1,26 @@
+.modal-header {
+    background-color: #880e4f;
+}
+
+.badge {
+    background-color: #B84381;
+}
+
 .classroomCardContainer {
-    margin: 2px auto;
-    width: 50vw;
+    margin: 5px auto;
+    width: 70vw;
+}
+
+.mdbCard {
+    margin: 5px;
+}
+
+.mdb-card-img {
+    background-color: white;
+}
+
+@media only screen and (min-width: 598px) {
+    mdb-card-img {
+        display: none;
+    }
 }

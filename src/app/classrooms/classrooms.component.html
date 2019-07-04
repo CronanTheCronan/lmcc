@@ -1,12 +1,80 @@
-<div class="classroomCardContainer" *ngFor="let classroom of classroomList">
-  <mdb-card class="mt-2">
-    <mdb-card-img style="width: 200px" src="{{classroom.photo}}" alt="card image cap"></mdb-card-img>
-    <mdb-card-body>
-      <mdb-card-title>
-        <h4>{{classroom.name}}</h4>
-      </mdb-card-title>
-      <mdb-card-text>
-        Age Group: {{classroom.ageGroup}} - {{classroom.ages}}
-      </mdb-card-text>
-    </mdb-card-body>
-  </mdb-card>
+<div class="classroomCardContainer d-flex flex-wrap">
+  <div class="" *ngFor="let classroom of classroomList">
+    <mdb-card class="mdbCard">
+      <mdb-card-img src="{{classroom.photo}}"></mdb-card-img>
+      <mdb-card-body>
+        <mdb-card-title>
+          <h4>{{ classroom.name }}</h4>
+        </mdb-card-title>
+        <mdb-card-text>
+          <strong>Age Group:</strong>
+          <br />
+          <em>{{ classroom.ageGroup }}</em>
+          <br />
+          {{ classroom.ages }}
+        </mdb-card-text>
+        <button type="button" mdbBtn color="unique" class="waves-light" data-toggle="modal" data-target="#basicExample"
+        (click)="frame.show()" mdbWavesEffect>Learn More</button>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</div>
+
+<div mdbModal #frame="mdbModal" class="modal fade right modal-scrolling" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+
+  <div class="modal-dialog modal-side modal-bottom-right modal-notify" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading">Discount offer:
+          <strong>10% off</strong>
+        </p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-3">
+            <p></p>
+            <p class="text-center">
+              <i class="fas fa-gift fa-4x"></i>
+            </p>
+          </div>
+
+          <div class="col-9">
+            <p>Sharing is caring. Therefore, from time to time we like to give our visitors small gifts.
+              Today is one of those
+              days.
+            </p>
+            <p>
+              <strong>Copy the following code and use it at the checkout. It's valid for
+                <u>one day</u>.</strong>
+            </p>
+            <h2>
+              <span class="badge">v52gs1</span>
+            </h2>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer flex-center">
+        <a href="https://mdbootstrap.com/products/angular-ui-kit/" mdbBtn color="unique" class="waves-effect"
+          mdbWavesEffect>Get it now
+          <i class="far fa-gem ml-1"></i>
+        </a>
+        <a type="button" mdbBtn color="unique" outline="true" class="waves-effect" mdbWavesEffect data-dismiss="modal"
+          (click)="frame.hide()">No, thanks</a>
+      </div>
+    </div>
+  </div>
+
+</div>
